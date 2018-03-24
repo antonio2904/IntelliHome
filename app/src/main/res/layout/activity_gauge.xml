@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".Analyse"
+    android:background="@drawable/bg9">
+
+    <TextView
+        android:text="CURRENT LOAD (W)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text=""
+        android:hint="0.0W"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView11"
+        android:layout_marginTop="44dp"
+        android:text="Today's  Consumption:" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="57dp"
+        android:text="Get Consumption By Date" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText7"
+        android:layout_marginTop="40dp"
+        android:text="Consumption:" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GO"
+        android:onClick="getConsumption"
+        android:layout_alignTop="@+id/editText7"
+        android:layout_toRightOf="@+id/editText7"
+        android:layout_toEndOf="@+id/editText7" />
+
+
+    <TextView
+        android:id="@+id/consumptionDate"
+        android:layout_width="wrap_content"
+        android:textSize="13sp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView14"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_toEndOf="@id/textView14" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_above="@+id/textView7"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_toRightOf="@+id/textView6"
+        android:textSize="13sp" />
+
+</RelativeLayout>

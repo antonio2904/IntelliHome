@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg1"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/bulb"
+                android:id="@+id/imageView2" />
+
+            <TextView
+                android:text="LIGHT 1"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ToggleButton
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="device1"
+                android:id="@+id/toggleButton" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg1"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/fan"
+                android:id="@+id/imageView3" />
+
+            <TextView
+                android:text="FAN 1"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="device2"
+                android:id="@+id/toggleButton2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg1"
+            android:layout_weight="1.0"
+            android:layout_marginTop="2dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/bulb"
+            android:id="@+id/imageView4" />
+
+        <TextView
+            android:text="LIGHT 2"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ToggleButton
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="device3"
+            android:id="@+id/toggleButton3" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg1"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/fan"
+                android:id="@+id/imageView5" />
+
+            <TextView
+                android:text="FAN 2"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="device4"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/toggleButton4" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/bg1"
+            android:layout_weight="1.0">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/bg1" />
+
+            <TextView
+                android:text="ALL"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="ON"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:onClick="deviceallon"
+                android:id="@+id/toggleButton8" />
+
+            <Button
+                android:text="OFF"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="devicealloff"
+                android:id="@+id/toggleButton9" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

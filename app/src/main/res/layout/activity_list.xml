@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg6"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/colorPrimary"
+        android:theme="?attr/actionBarTheme"
+        android:minHeight="?attr/actionBarSize"
+        android:weightSum="1">
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Temp: "
+         android:onClick="temp"
+         android:textSize="20sp"
+         android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:id="@+id/tempvalue"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="T"
+            android:onClick="temp"
+            />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Humidity: "
+         android:textSize="20sp"
+         android:textColor="#ffffff"
+         android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:id="@+id/humvalue"/>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:text="H"
+            android:onClick="humidity"/>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg16"
+            android:onClick="control"
+            android:text="Control"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg16"
+            android:layout_weight="1.0"
+            android:onClick="analyse"
+            android:text="Analyse" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg16"
+            android:layout_weight="1.0"
+            android:onClick="set"
+            android:text="Set" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:src="@drawable/bluetooth"
+                android:onClick="bluetooth" />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="NO DEVICES CONNECTED"
+                android:textSize="20sp"
+                android:id="@+id/connection"/>
+
+        </LinearLayout>
+</LinearLayout>
